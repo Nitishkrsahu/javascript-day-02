@@ -7,9 +7,9 @@
     <script type="text/javascript">
         "use strict"
         function onRefresh(){
-            document.getElementById("registerValue").value = "Register";
-            document.getElementById("loginValue").value = "Login";
-            document.getElementById("pic").src = "../src/5.png";
+            document.querySelector("img").src = "../src/5.png";
+            document.querySelector(".registerValue").value = "Register";
+            document.querySelector("#loginValue").value = "Login";
         }
     </script>
 </head>
@@ -17,16 +17,16 @@
     <img width="200" height="200" id="pic">
     <form>
         <dl>
-            <dt>Register</dt>
-            <dd><input type="text"></dd>
-            <dd><input type="password"></dd>
-            <dd><input type="button" id="registerValue"></dd>
+            <dt>Register</dt><br>
+            <dd><input type="text"></dd><br>
+            <dd><input type="password"></dd><br>
+            <dd><input type="button" class="registerValue"></dd>
         </dl>
     </form>
     <form>
         <dl>
-            <dt>Login</dt>
-            <dd><input type="text"></dd>
+            <dt>Login</dt><br>
+            <dd><input type="text"></dd><br>
             <dd><input type="button" id="loginValue"></dd>
         </dl>
     </form>
