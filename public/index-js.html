@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        "use strict"
+        function onRefresh(){
+            pic.src = "../src/5.png";
+            registerForm.registerValue.value = "Register";
+            loginForm.loginValue.value = "Login";
+        }
+    </script>
+</head>
+<body onload="onRefresh()">
+    <img width="200" height="200" name="pic">
+    <form name="registerForm">
+        <dl>
+            <dt>Register</dt>
+            <dd><input type="text"></dd>
+            <dd><input type="password"></dd>
+            <dd><input type="button" name="registerValue"></dd>
+        </dl>
+    </form>
+    <form name="loginForm">
+        <dl>
+            <dt>Login</dt>
+            <dd><input type="text"></dd>
+            <dd><input type="button" name="loginValue"></dd>
+        </dl>
+    </form>
+</body>
+</html>
