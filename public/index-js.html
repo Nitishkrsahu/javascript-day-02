@@ -7,27 +7,27 @@
     <script type="text/javascript">
         "use strict"
         function onRefresh(){
-            pic.src = "../src/5.png";
-            registerForm.registerValue.value = "Register";
-            loginForm.loginValue.value = "Login";
+            document.getElementById("registerValue").value = "Register";
+            document.getElementById("loginValue").value = "Login";
+            document.getElementById("pic").src = "../src/5.png";
         }
     </script>
 </head>
 <body onload="onRefresh()">
-    <img width="200" height="200" name="pic">
-    <form name="registerForm">
+    <img width="200" height="200" id="pic">
+    <form>
         <dl>
             <dt>Register</dt>
             <dd><input type="text"></dd>
             <dd><input type="password"></dd>
-            <dd><input type="button" name="registerValue"></dd>
+            <dd><input type="button" id="registerValue"></dd>
         </dl>
     </form>
-    <form name="loginForm">
+    <form>
         <dl>
             <dt>Login</dt>
             <dd><input type="text"></dd>
-            <dd><input type="button" name="loginValue"></dd>
+            <dd><input type="button" id="loginValue"></dd>
         </dl>
     </form>
 </body>
